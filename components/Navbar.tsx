@@ -17,7 +17,7 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="bg-white/70 backdrop-blur-[20px] border-b border-black/[0.06] sticky top-0 z-50 safe-area-inset-top transition-all duration-300" style="box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.03);">
+    <nav className="bg-white/70 backdrop-blur-[20px] border-b border-black/[0.06] sticky top-0 z-50 safe-area-inset-top transition-all duration-300" style={{ boxShadow: '0 1px 0 0 rgba(0, 0, 0, 0.03)' }}>
       <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-8 lg:px-12">
         <div className="flex justify-between items-center h-[52px]">
           <Link href="/" className="flex items-center -ml-2 transition-opacity duration-200 hover:opacity-70">
