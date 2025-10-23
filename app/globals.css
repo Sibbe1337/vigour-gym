@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-primary: #1d1d1f;
+  --brand-ink: #1d1d1f;
+  --brand-sand: #f5f5f7;
+  --brand-paper: #fbfbfd;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Text', 'SF Pro Display', system-ui, sans-serif;
+  color: var(--brand-ink);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-primary text-white rounded-full px-8 py-3.5 font-medium hover:bg-opacity-90 transition-all duration-300 inline-block text-base;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-brand-primary rounded-full px-8 py-3.5 font-medium hover:bg-brand-sand transition-all duration-300 inline-block text-base;
+  }
+
+  .btn-outline {
+    @apply border border-brand-ink/20 text-brand-ink rounded-full px-8 py-3.5 font-medium hover:border-brand-ink/40 transition-all duration-300 inline-block text-base;
+  }
+
+  .section {
+    @apply max-w-[980px] mx-auto px-6 sm:px-8 lg:px-12 py-20 md:py-32;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-semibold text-brand-ink mb-6 tracking-tight leading-tight;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl border border-gray-100 p-8 transition-all duration-300 hover:border-gray-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
