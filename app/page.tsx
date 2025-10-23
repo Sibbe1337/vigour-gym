@@ -27,20 +27,20 @@ export default async function HomePage() {
       />
 
       {/* Quick Visual Identity Section */}
-      <section className="py-0 -mt-16 sm:-mt-20 relative z-10">
+      <section className="py-0 -mt-20 sm:-mt-24 relative z-10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
-          <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-10 grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 text-center">
-            <div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-brand-ink mb-2">Strength Training</h3>
-              <p className="text-xs sm:text-sm text-gray-600">Expert Programming</p>
+          <div className="bg-white/95 backdrop-blur-xl rounded-[28px] shadow-2xl ring-1 ring-black/5 p-8 sm:p-10 md:p-12 grid grid-cols-3 gap-6 sm:gap-8 md:gap-10 text-center">
+            <div className="group">
+              <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-semibold text-brand-ink mb-1.5 tracking-[-0.01em]">Strength Training</h3>
+              <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-tight">Expert Programming</p>
             </div>
-            <div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-brand-ink mb-2">Nutrition</h3>
-              <p className="text-xs sm:text-sm text-gray-600">Personalized Plans</p>
+            <div className="group">
+              <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-semibold text-brand-ink mb-1.5 tracking-[-0.01em]">Nutrition</h3>
+              <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-tight">Personalized Plans</p>
             </div>
-            <div>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-brand-ink mb-2">BioSignature</h3>
-              <p className="text-xs sm:text-sm text-gray-600">Body Composition</p>
+            <div className="group">
+              <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-semibold text-brand-ink mb-1.5 tracking-[-0.01em]">BioSignature</h3>
+              <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-tight">Body Composition</p>
             </div>
           </div>
         </div>
@@ -49,30 +49,30 @@ export default async function HomePage() {
       {/* How We Work Section */}
       <section className="section bg-white">
         <h2 className="section-title text-center">How We Work</h2>
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 text-center max-w-2xl mx-auto mb-10 sm:mb-12 md:mb-16 leading-relaxed">
+        <p className="text-[19px] sm:text-[21px] md:text-[24px] text-[#86868b] text-center max-w-2xl mx-auto mb-12 sm:mb-14 md:mb-16 leading-[1.4] tracking-[-0.01em]">
           Evidence-based training. Personalized coaching. Real results.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 sm:gap-12 md:gap-14">
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 tracking-tight">Assessment</h3>
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+            <h3 className="text-[21px] sm:text-[24px] font-semibold mb-3 tracking-[-0.01em] leading-tight">Assessment</h3>
+            <p className="text-[15px] sm:text-[17px] text-[#86868b] leading-[1.5] tracking-[-0.005em]">
               Comprehensive evaluation including BioSignature body composition analysis.
             </p>
           </div>
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 tracking-tight">Programming</h3>
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+            <h3 className="text-[21px] sm:text-[24px] font-semibold mb-3 tracking-[-0.01em] leading-tight">Programming</h3>
+            <p className="text-[15px] sm:text-[17px] text-[#86868b] leading-[1.5] tracking-[-0.005em]">
               Customized training and nutrition tailored to your unique physiology.
             </p>
           </div>
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 tracking-tight">Coaching</h3>
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+            <h3 className="text-[21px] sm:text-[24px] font-semibold mb-3 tracking-[-0.01em] leading-tight">Coaching</h3>
+            <p className="text-[15px] sm:text-[17px] text-[#86868b] leading-[1.5] tracking-[-0.005em]">
               Ongoing support with regular check-ins and program adjustments.
             </p>
           </div>
         </div>
-        <div className="text-center mt-8 sm:mt-10 md:mt-12">
+        <div className="text-center mt-10 sm:mt-12 md:mt-14">
           <a href="/how-we-work" className="btn-primary">
             Explore Our Methodology
           </a>

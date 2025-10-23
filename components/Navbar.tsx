@@ -17,27 +17,27 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="bg-white/95 backdrop-blur-xl border-b border-gray-200 sticky top-0 z-50 safe-area-inset-top">
+    <nav className="bg-white/80 backdrop-blur-2xl border-b border-black/[0.08] sticky top-0 z-50 safe-area-inset-top">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
-        <div className="flex justify-between items-center h-16 sm:h-20">
-          <Link href="/" className="flex items-center">
+        <div className="flex justify-between items-center h-[52px] sm:h-[60px]">
+          <Link href="/" className="flex items-center -ml-2">
             <Image
               src="/vigour-logo.avif"
               alt="Vigour Gym"
               width={240}
               height={85}
               priority
-              className="h-12 sm:h-16 w-auto"
+              className="h-[44px] sm:h-[52px] w-auto"
             />
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex space-x-12 items-center">
+          <ul className="hidden lg:flex space-x-8 items-center">
             {links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-black hover:text-gray-600 transition-colors text-base font-semibold"
+                  className="text-black hover:text-black/60 transition-colors duration-200 text-[14px] font-normal tracking-[-0.01em]"
                 >
                   {link.label}
                 </Link>
@@ -45,7 +45,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <a href="/booking" className="hidden lg:block bg-black text-white rounded-full px-7 py-3 text-base font-bold hover:bg-gray-800 transition-all duration-200 touch-manipulation">
+          <a href="/booking" className="hidden lg:block bg-black text-white rounded-full px-5 py-2 text-[14px] font-normal hover:bg-black/90 transition-all duration-200 ease-out active:scale-[0.98] touch-manipulation">
             Book
           </a>
 

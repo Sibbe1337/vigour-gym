@@ -5,10 +5,11 @@
 @tailwind utilities;
 
 :root {
-  --brand-primary: #1d1d1f;
+  --brand-primary: #000000;
   --brand-ink: #1d1d1f;
   --brand-sand: #f5f5f7;
   --brand-paper: #fbfbfd;
+  --brand-text-gray: #86868b;
 }
 
 html {
@@ -17,12 +18,14 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Text', 'SF Pro Display', system-ui, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
   color: var(--brand-ink);
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   overscroll-behavior-y: none;
+  letter-spacing: -0.01em;
 }
 
 /* Better tap targets for mobile */
@@ -35,27 +38,27 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply bg-brand-primary text-white rounded-full px-6 sm:px-8 py-4 font-medium hover:bg-opacity-90 active:scale-95 transition-all duration-300 inline-block text-base sm:text-base touch-manipulation;
+    @apply bg-brand-primary text-white rounded-full px-7 sm:px-9 py-3.5 sm:py-4 font-semibold hover:bg-[#1d1d1f] active:scale-[0.98] transition-all duration-200 ease-out inline-block text-[17px] leading-tight touch-manipulation shadow-sm;
   }
 
   .btn-secondary {
-    @apply bg-transparent text-brand-primary rounded-full px-6 sm:px-8 py-4 font-medium hover:bg-brand-sand active:scale-95 transition-all duration-300 inline-block text-base sm:text-base touch-manipulation;
+    @apply bg-transparent text-brand-primary rounded-full px-7 sm:px-9 py-3.5 sm:py-4 font-semibold hover:bg-brand-sand/50 active:scale-[0.98] transition-all duration-200 ease-out inline-block text-[17px] leading-tight touch-manipulation border border-brand-ink/10;
   }
 
   .btn-outline {
-    @apply border border-brand-ink/20 text-brand-ink rounded-full px-6 sm:px-8 py-4 font-medium hover:border-brand-ink/40 active:scale-95 transition-all duration-300 inline-block text-base sm:text-base touch-manipulation;
+    @apply border border-brand-ink/15 text-brand-ink rounded-full px-7 sm:px-9 py-3.5 sm:py-4 font-semibold hover:border-brand-ink/30 hover:bg-brand-sand/30 active:scale-[0.98] transition-all duration-200 ease-out inline-block text-[17px] leading-tight touch-manipulation;
   }
 
   .section {
-    @apply max-w-[980px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 lg:py-32;
+    @apply max-w-[980px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-16 sm:py-20 md:py-24 lg:py-32;
   }
 
   .section-title {
-    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-brand-ink mb-4 sm:mb-6 tracking-tight leading-tight;
+    @apply text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] font-semibold text-brand-ink mb-5 sm:mb-6 tracking-[-0.015em] leading-[1.1] lg:leading-[1.05];
   }
 
   .card {
-    @apply bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 transition-all duration-300 hover:border-gray-200 touch-manipulation;
+    @apply bg-white rounded-2xl border border-gray-100/50 p-6 sm:p-8 transition-all duration-300 hover:border-gray-200/60 hover:shadow-sm touch-manipulation;
   }
 }
 
