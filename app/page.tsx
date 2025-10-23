@@ -19,11 +19,35 @@ export default async function HomePage() {
   return (
     <>
       <Hero
-        title="Transform Your Body, Elevate Your Life"
-        subtitle="Experience evidence-based training, personalized nutrition, and advanced body composition analysis with Stockholm's premier strength and conditioning facility"
-        ctaPrimary={{ text: 'Book Consultation', href: '/booking' }}
-        ctaSecondary={{ text: 'Learn About Our Methods', href: '/how-we-work' }}
+        title="Stockholm's Premier Strength & Conditioning Gym"
+        subtitle="Evidence-based training, personalized nutrition, and advanced body composition analysis. Transform your physique with expert coaching and world-class facilities."
+        ctaPrimary={{ text: 'Book Free Consultation', href: '/booking' }}
+        ctaSecondary={{ text: 'Explore Our Methods', href: '/how-we-work' }}
+        backgroundImage="/gallery/vigour-1.jpg"
       />
+
+      {/* Quick Visual Identity Section */}
+      <section className="py-0 -mt-16 sm:-mt-20 relative z-10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
+          <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-10 grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 text-center">
+            <div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-primary mb-2">💪</div>
+              <h3 className="text-sm sm:text-base md:text-lg font-bold text-brand-ink mb-1">Strength Training</h3>
+              <p className="text-xs sm:text-sm text-gray-600">Expert Programming</p>
+            </div>
+            <div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-primary mb-2">🥗</div>
+              <h3 className="text-sm sm:text-base md:text-lg font-bold text-brand-ink mb-1">Nutrition</h3>
+              <p className="text-xs sm:text-sm text-gray-600">Personalized Plans</p>
+            </div>
+            <div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-primary mb-2">📊</div>
+              <h3 className="text-sm sm:text-base md:text-lg font-bold text-brand-ink mb-1">BioSignature</h3>
+              <p className="text-xs sm:text-sm text-gray-600">Body Composition</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* How We Work Section */}
       <section className="section bg-white">
