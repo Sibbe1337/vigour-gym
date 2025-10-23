@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,22 +8,41 @@
   --brand-sand: #f5f5f7;
   --brand-paper: #fbfbfd;
   --brand-text-gray: #86868b;
+  --easing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-entrance: cubic-bezier(0, 0, 0.2, 1);
+  --easing-exit: cubic-bezier(0.4, 0, 1, 1);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
+  scroll-padding-top: 60px;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', system-ui, sans-serif;
   color: var(--brand-ink);
   background-color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
   overscroll-behavior-y: none;
   letter-spacing: -0.01em;
+}
+
+/* Selection colors */
+::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* Better tap targets for mobile */
@@ -38,27 +55,62 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply bg-brand-primary text-white rounded-full px-7 sm:px-9 py-3.5 sm:py-4 font-semibold hover:bg-[#1d1d1f] active:scale-[0.98] transition-all duration-200 ease-out inline-block text-[17px] leading-tight touch-manipulation shadow-sm;
+    @apply relative bg-brand-primary text-white rounded-full px-7 sm:px-9 py-3.5 sm:py-4 font-semibold hover:bg-[#1d1d1f] active:scale-[0.97] inline-block text-[17px] leading-tight touch-manipulation overflow-hidden;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.15);
   }
 
   .btn-secondary {
-    @apply bg-transparent text-brand-primary rounded-full px-7 sm:px-9 py-3.5 sm:py-4 font-semibold hover:bg-brand-sand/50 active:scale-[0.98] transition-all duration-200 ease-out inline-block text-[17px] leading-tight touch-manipulation border border-brand-ink/10;
+    @apply relative bg-transparent text-brand-primary rounded-full px-7 sm:px-9 py-3.5 sm:py-4 font-semibold hover:bg-black/[0.04] active:scale-[0.97] inline-block text-[17px] leading-tight touch-manipulation border border-black/[0.12] overflow-hidden;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .btn-outline {
-    @apply border border-brand-ink/15 text-brand-ink rounded-full px-7 sm:px-9 py-3.5 sm:py-4 font-semibold hover:border-brand-ink/30 hover:bg-brand-sand/30 active:scale-[0.98] transition-all duration-200 ease-out inline-block text-[17px] leading-tight touch-manipulation;
+  .btn-secondary:hover {
+    border-color: rgba(0, 0, 0, 0.2);
   }
 
   .section {
-    @apply max-w-[980px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-16 sm:py-20 md:py-24 lg:py-32;
+    @apply max-w-[980px] mx-auto px-5 sm:px-6 md:px-8 lg:px-12 py-20 sm:py-24 md:py-28 lg:py-36;
   }
 
   .section-title {
-    @apply text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] font-semibold text-brand-ink mb-5 sm:mb-6 tracking-[-0.015em] leading-[1.1] lg:leading-[1.05];
+    @apply text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] font-semibold text-brand-ink mb-[18px] sm:mb-5 tracking-[-0.015em] leading-[1.08] lg:leading-[1.05];
+    animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) backwards;
   }
 
   .card {
-    @apply bg-white rounded-2xl border border-gray-100/50 p-6 sm:p-8 transition-all duration-300 hover:border-gray-200/60 hover:shadow-sm touch-manipulation;
+    @apply bg-white rounded-[20px] border border-black/[0.06] p-6 sm:p-8 touch-manipulation;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

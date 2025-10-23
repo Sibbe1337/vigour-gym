@@ -24,19 +24,21 @@ export default function GalleryGrid({
   }[columns]
 
   return (
-    <div className={`grid grid-cols-1 ${columnClass} gap-4`}>
+    <div className={`grid grid-cols-1 ${columnClass} gap-3 sm:gap-4`}>
       {images.map((image, index) => (
         <div
           key={index}
-          className="relative aspect-[4/3] rounded-xl overflow-hidden group"
+          className="relative aspect-[4/3] rounded-[18px] overflow-hidden group cursor-pointer ring-1 ring-black/[0.04] transition-all duration-300 hover:ring-black/[0.08]"
+          style="box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.1);"
         >
           <Image
             src={image}
             alt={`Vigour Gym facility ${index + 1}`}
             fill
-            className="object-cover group-hover:scale-[1.02] transition-transform duration-700 ease-out"
+            className="object-cover group-hover:scale-[1.05] transition-all duration-700 ease-out"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500"></div>
         </div>
       ))}
     </div>

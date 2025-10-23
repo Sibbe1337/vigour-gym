@@ -27,20 +27,20 @@ export default async function HomePage() {
       />
 
       {/* Quick Visual Identity Section */}
-      <section className="py-0 -mt-20 sm:-mt-24 relative z-10">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
-          <div className="bg-white/95 backdrop-blur-xl rounded-[28px] shadow-2xl ring-1 ring-black/5 p-8 sm:p-10 md:p-12 grid grid-cols-3 gap-6 sm:gap-8 md:gap-10 text-center">
-            <div className="group">
-              <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-semibold text-brand-ink mb-1.5 tracking-[-0.01em]">Strength Training</h3>
-              <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-tight">Expert Programming</p>
+      <section className="py-0 -mt-24 sm:-mt-28 relative z-10 animate-[fadeIn_0.8s_ease-out_0.2s_backwards]">
+        <div className="max-w-[1080px] mx-auto px-5 sm:px-6 md:px-8">
+          <div className="bg-white/80 backdrop-blur-2xl rounded-[30px] ring-1 ring-black/[0.08] p-10 sm:p-12 md:p-14 grid grid-cols-3 gap-8 sm:gap-10 md:gap-12 text-center transition-all duration-500 hover:ring-black/[0.12]" style="box-shadow: 0 8px 30px -6px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.05);">
+            <div className="group cursor-default">
+              <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-semibold text-brand-ink mb-2 tracking-[-0.012em] transition-colors duration-200 group-hover:text-black">Strength Training</h3>
+              <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-[1.4] tracking-[-0.005em]">Expert Programming</p>
             </div>
-            <div className="group">
-              <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-semibold text-brand-ink mb-1.5 tracking-[-0.01em]">Nutrition</h3>
-              <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-tight">Personalized Plans</p>
+            <div className="group cursor-default border-x border-black/[0.08]">
+              <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-semibold text-brand-ink mb-2 tracking-[-0.012em] transition-colors duration-200 group-hover:text-black">Nutrition</h3>
+              <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-[1.4] tracking-[-0.005em]">Personalized Plans</p>
             </div>
-            <div className="group">
-              <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-semibold text-brand-ink mb-1.5 tracking-[-0.01em]">BioSignature</h3>
-              <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-tight">Body Composition</p>
+            <div className="group cursor-default">
+              <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-semibold text-brand-ink mb-2 tracking-[-0.012em] transition-colors duration-200 group-hover:text-black">BioSignature</h3>
+              <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-[1.4] tracking-[-0.005em]">Body Composition</p>
             </div>
           </div>
         </div>

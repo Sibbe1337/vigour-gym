@@ -17,35 +17,36 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="bg-white/80 backdrop-blur-2xl border-b border-black/[0.08] sticky top-0 z-50 safe-area-inset-top">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
-        <div className="flex justify-between items-center h-[52px] sm:h-[60px]">
-          <Link href="/" className="flex items-center -ml-2">
+    <nav className="bg-white/70 backdrop-blur-[20px] border-b border-black/[0.06] sticky top-0 z-50 safe-area-inset-top transition-all duration-300" style="box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.03);">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-8 lg:px-12">
+        <div className="flex justify-between items-center h-[52px]">
+          <Link href="/" className="flex items-center -ml-2 transition-opacity duration-200 hover:opacity-70">
             <Image
               src="/vigour-logo.avif"
               alt="Vigour Gym"
               width={240}
               height={85}
               priority
-              className="h-[44px] sm:h-[52px] w-auto"
+              className="h-[44px] w-auto"
             />
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex space-x-8 items-center">
+          <ul className="hidden lg:flex space-x-9 items-center">
             {links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-black hover:text-black/60 transition-colors duration-200 text-[14px] font-normal tracking-[-0.01em]"
+                  className="text-black/90 hover:text-black transition-all duration-200 text-[12px] font-normal tracking-[0.01em] relative group"
                 >
                   {link.label}
+                  <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
             ))}
           </ul>
 
-          <a href="/booking" className="hidden lg:block bg-black text-white rounded-full px-5 py-2 text-[14px] font-normal hover:bg-black/90 transition-all duration-200 ease-out active:scale-[0.98] touch-manipulation">
+          <a href="/booking" className="hidden lg:block bg-black text-white rounded-full px-[18px] py-[7px] text-[12px] font-normal hover:bg-black/90 active:scale-[0.96] touch-manipulation" style="transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
             Book
           </a>
 
