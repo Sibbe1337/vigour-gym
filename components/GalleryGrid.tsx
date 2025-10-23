@@ -29,7 +29,7 @@ export default function GalleryGrid({
         <div
           key={index}
           className="relative aspect-[4/3] rounded-[18px] overflow-hidden group cursor-pointer ring-1 ring-black/[0.04] transition-all duration-300 hover:ring-black/[0.08]"
-          style="box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.1);"
+          style={{ boxShadow: '0 2px 8px -2px rgba(0, 0, 0, 0.1)' }}
         >
           <Image
             src={image}
