@@ -31,18 +31,15 @@ export default async function HomePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-10 grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 text-center">
             <div>
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-primary mb-2">💪</div>
-              <h3 className="text-sm sm:text-base md:text-lg font-bold text-brand-ink mb-1">Strength Training</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-brand-ink mb-2">Strength Training</h3>
               <p className="text-xs sm:text-sm text-gray-600">Expert Programming</p>
             </div>
             <div>
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-primary mb-2">🥗</div>
-              <h3 className="text-sm sm:text-base md:text-lg font-bold text-brand-ink mb-1">Nutrition</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-brand-ink mb-2">Nutrition</h3>
               <p className="text-xs sm:text-sm text-gray-600">Personalized Plans</p>
             </div>
             <div>
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-primary mb-2">📊</div>
-              <h3 className="text-sm sm:text-base md:text-lg font-bold text-brand-ink mb-1">BioSignature</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-brand-ink mb-2">BioSignature</h3>
               <p className="text-xs sm:text-sm text-gray-600">Body Composition</p>
             </div>
           </div>
