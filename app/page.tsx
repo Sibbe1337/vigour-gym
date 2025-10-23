@@ -28,30 +28,30 @@ export default async function HomePage() {
       {/* How We Work Section */}
       <section className="section bg-white">
         <h2 className="section-title text-center">How We Work</h2>
-        <p className="text-xl md:text-2xl text-gray-600 text-center max-w-2xl mx-auto mb-16 leading-relaxed">
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 text-center max-w-2xl mx-auto mb-10 sm:mb-12 md:mb-16 leading-relaxed">
           Evidence-based training. Personalized coaching. Real results.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
           <div className="text-center">
-            <h3 className="text-2xl font-semibold mb-4 tracking-tight">Assessment</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 tracking-tight">Assessment</h3>
+            <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
               Comprehensive evaluation including BioSignature body composition analysis.
             </p>
           </div>
           <div className="text-center">
-            <h3 className="text-2xl font-semibold mb-4 tracking-tight">Programming</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 tracking-tight">Programming</h3>
+            <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
               Customized training and nutrition tailored to your unique physiology.
             </p>
           </div>
           <div className="text-center">
-            <h3 className="text-2xl font-semibold mb-4 tracking-tight">Coaching</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 tracking-tight">Coaching</h3>
+            <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
               Ongoing support with regular check-ins and program adjustments.
             </p>
           </div>
         </div>
-        <div className="text-center mt-12">
+        <div className="text-center mt-8 sm:mt-10 md:mt-12">
           <a href="/how-we-work" className="btn-primary">
             Explore Our Methodology
           </a>
@@ -79,7 +79,7 @@ export default async function HomePage() {
       {/* Gallery Section */}
       <section className="section bg-white">
         <h2 className="section-title text-center">Our Facility</h2>
-        <p className="text-xl md:text-2xl text-gray-600 text-center max-w-2xl mx-auto mb-16 leading-relaxed">
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 text-center max-w-2xl mx-auto mb-10 sm:mb-12 md:mb-16 leading-relaxed">
           Professional equipment. Expert coaching. Results-driven environment.
         </p>
         <GalleryGrid />

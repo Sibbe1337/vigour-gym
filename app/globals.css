@@ -11,37 +11,51 @@
   --brand-paper: #fbfbfd;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Text', 'SF Pro Display', system-ui, sans-serif;
   color: var(--brand-ink);
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: none;
+}
+
+/* Better tap targets for mobile */
+@media (max-width: 768px) {
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-brand-primary text-white rounded-full px-8 py-3.5 font-medium hover:bg-opacity-90 transition-all duration-300 inline-block text-base;
+    @apply bg-brand-primary text-white rounded-full px-6 sm:px-8 py-4 font-medium hover:bg-opacity-90 active:scale-95 transition-all duration-300 inline-block text-base sm:text-base touch-manipulation;
   }
 
   .btn-secondary {
-    @apply bg-transparent text-brand-primary rounded-full px-8 py-3.5 font-medium hover:bg-brand-sand transition-all duration-300 inline-block text-base;
+    @apply bg-transparent text-brand-primary rounded-full px-6 sm:px-8 py-4 font-medium hover:bg-brand-sand active:scale-95 transition-all duration-300 inline-block text-base sm:text-base touch-manipulation;
   }
 
   .btn-outline {
-    @apply border border-brand-ink/20 text-brand-ink rounded-full px-8 py-3.5 font-medium hover:border-brand-ink/40 transition-all duration-300 inline-block text-base;
+    @apply border border-brand-ink/20 text-brand-ink rounded-full px-6 sm:px-8 py-4 font-medium hover:border-brand-ink/40 active:scale-95 transition-all duration-300 inline-block text-base sm:text-base touch-manipulation;
   }
 
   .section {
-    @apply max-w-[980px] mx-auto px-6 sm:px-8 lg:px-12 py-20 md:py-32;
+    @apply max-w-[980px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 md:py-20 lg:py-32;
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl lg:text-6xl font-semibold text-brand-ink mb-6 tracking-tight leading-tight;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-brand-ink mb-4 sm:mb-6 tracking-tight leading-tight;
   }
 
   .card {
-    @apply bg-white rounded-2xl border border-gray-100 p-8 transition-all duration-300 hover:border-gray-200;
+    @apply bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 transition-all duration-300 hover:border-gray-200 touch-manipulation;
   }
 }
 

@@ -8,6 +8,12 @@ import { generateOrganizationJsonLd, generateWebSiteJsonLd } from '@/lib/json-ld
 export const metadata: Metadata = {
   title: 'Vigour Gym - Transform Your Body, Elevate Your Life',
   description: 'Premier fitness destination for strength training, nutrition guidance, and personalized coaching in Stockholm.',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true,
+  },
   openGraph: {
     type: 'website',
     locale: 'sv_SE',

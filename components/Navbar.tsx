@@ -17,9 +17,9 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="bg-white/95 backdrop-blur-xl border-b border-gray-200 sticky top-0 z-50">
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="flex justify-between items-center h-20">
+    <nav className="bg-white/95 backdrop-blur-xl border-b border-gray-200 sticky top-0 z-50 safe-area-inset-top">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+        <div className="flex justify-between items-center h-16 sm:h-20">
           <Link href="/" className="flex items-center">
             <Image
               src="/vigour-logo.avif"
@@ -27,7 +27,7 @@ export default function Navbar() {
               width={240}
               height={85}
               priority
-              className="h-16 w-auto"
+              className="h-12 sm:h-16 w-auto"
             />
           </Link>
 
@@ -45,18 +45,18 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <a href="/booking" className="hidden lg:block bg-black text-white rounded-full px-7 py-3 text-base font-bold hover:bg-gray-800 transition-all duration-200">
+          <a href="/booking" className="hidden lg:block bg-black text-white rounded-full px-7 py-3 text-base font-bold hover:bg-gray-800 transition-all duration-200 touch-manipulation">
             Book
           </a>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2"
+            className="lg:hidden p-3 -mr-3 touch-manipulation"
             aria-label="Toggle menu"
           >
             <svg
-              className="w-6 h-6 text-brand-ink"
+              className="w-7 h-7 text-brand-ink"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -72,21 +72,21 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="lg:hidden pb-6">
-            <ul className="space-y-4">
+          <div className="lg:hidden pb-6 pt-2">
+            <ul className="space-y-2">
               {links.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="block py-3 text-black font-semibold text-lg hover:text-gray-600 transition-colors"
+                    className="block py-4 px-2 text-black font-semibold text-lg hover:text-gray-600 transition-colors touch-manipulation active:bg-gray-50 rounded-lg"
                   >
                     {link.label}
                   </Link>
                 </li>
               ))}
-              <li>
-                <a href="/booking" className="btn-primary block text-center mt-4">
+              <li className="pt-2">
+                <a href="/booking" className="btn-primary block text-center w-full">
                   Book
                 </a>
               </li>
