@@ -23,7 +23,7 @@ export default async function HomePage() {
         subtitle="Evidence-based training, personalized nutrition, and advanced body composition analysis. Transform your physique with expert coaching and world-class facilities."
         ctaPrimary={{ text: 'Book Free Consultation', href: '/booking' }}
         ctaSecondary={{ text: 'Explore Our Methods', href: '/how-we-work' }}
-        backgroundImage="/gallery/vigour-1.jpg"
+        backgroundImage="/gallery/vigour-5.jpg"
       />
 
       {/* Quick Visual Identity Section */}
