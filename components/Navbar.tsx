@@ -46,7 +46,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <a href="/booking" className="hidden lg:block bg-black text-white rounded-full px-[18px] py-[7px] text-[12px] font-normal hover:bg-black/90 active:scale-[0.96] touch-manipulation" style="transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
+          <a href="/booking" className="hidden lg:block bg-black text-white rounded-full px-[18px] py-[7px] text-[12px] font-normal hover:bg-black/90 active:scale-[0.96] touch-manipulation" style={{ transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)' }}>
             Book
           </a>
 
