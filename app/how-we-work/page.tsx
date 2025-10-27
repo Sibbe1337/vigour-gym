@@ -7,8 +7,8 @@ import { getMethod } from '@/lib/sanity.queries'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'How We Work - Evidence-Based Training & BioSignature Analysis | Vigour Gym',
-  description: 'Discover our science-based approach to strength training, body composition analysis, and hormonal optimization. Learn about BioSignature methodology and personalized programming at Stockholm\'s premier performance gym.',
+  title: 'How We Work - Evidence-Based Training & Body Composition Analysis | Vigour Gym',
+  description: 'Discover our science-based approach to strength training, body composition analysis, and hormonal optimization. Learn about our body fat measurement methodology and personalized programming at Stockholm\'s premier performance gym.',
 }
 
 export const revalidate = 60
@@ -74,7 +74,7 @@ export default async function HowWeWorkPage() {
                     Every client begins with an in-depth evaluation that goes far beyond basic measurements. We assess your movement quality, strength levels across multiple planes, training history, injury background, lifestyle factors, stress levels, sleep quality, and nutritional habits. This comprehensive picture allows us to identify limiting factors, asymmetries, and opportunities for optimization.
                   </p>
                   <p className="text-gray-700 leading-relaxed">
-                    For clients seeking advanced body composition analysis, we offer BioSignature assessment—a sophisticated method that measures subcutaneous body fat at 12 specific sites to identify potential hormonal imbalances and metabolic dysfunction. This data informs targeted interventions through training modifications, nutritional adjustments, supplementation protocols, and lifestyle optimization strategies.
+                    For clients seeking advanced body composition analysis, we offer Vigour's body fat measurement—a method that measures subcutaneous body fat at 14 specific sites to identify potential hormonal imbalances and metabolic dysfunction. This data informs targeted interventions through training modifications, nutritional adjustments, supplementation protocols, and lifestyle optimization strategies.
                   </p>
                 </div>
               </div>
@@ -125,127 +125,29 @@ export default async function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* BioSignature Deep Dive */}
-      <section id="biosignature" className="section bg-white">
+      {/* Body Fat Measurement Deep Dive */}
+      <section id="body-fat-measurement" className="section bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="inline-block bg-brand-primary text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
             Advanced Body Composition Analysis
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-ink mb-6 font-display">
-            BioSignature Modulation: Understanding Hormonal Patterns Through Body Fat Distribution
+            Vigour's Body Fat Measurement
           </h2>
 
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              BioSignature is a sophisticated body composition analysis method developed by renowned strength coach Charles Poliquin, based on research showing that specific patterns of subcutaneous fat storage correlate with particular hormonal profiles and metabolic imbalances. By measuring body fat at 12 distinct sites using precision calipers, we can identify potential hormonal dysregulation and metabolic dysfunction that may be limiting your progress.
+              A method that measures subcutaneous body fat at 14 specific sites to identify potential hormonal imbalances and metabolic dysfunction. This data informs targeted interventions through training modifications, nutritional adjustments, supplementation protocols and lifestyle optimization strategies.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              The BioSignature method recognizes that where your body preferentially stores fat provides valuable insights into your endocrine function. For example, excessive subscapular fat (upper back) often indicates insulin resistance, elevated abdominal fat correlates with cortisol dysregulation, triceps and quadriceps sites can indicate suboptimal testosterone or growth hormone status, and suprailiac measurements may suggest blood sugar handling issues.
+              We often recommend specific types of blood work through our laboratory partners, providing both real-time body composition data and detailed endocrine panel results.
             </p>
           </div>
 
-          <div className="bg-brand-paper rounded-xl p-8 mb-8">
-            <h3 className="text-2xl font-bold text-brand-ink mb-6">The BioSignature Assessment Process</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <div className="flex-shrink-0 w-2 h-2 bg-brand-primary rounded-full mt-2 mr-4"></div>
-                <div>
-                  <p className="text-gray-700 leading-relaxed">
-                    <strong>12-Site Body Fat Measurement:</strong> We use precision Harpenden calipers to measure subcutaneous fat thickness at chin, cheek, pectoral, triceps, subscapular, midaxillary, suprailiac, umbilical, knee, calf, quadriceps, and hamstring sites.
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 w-2 h-2 bg-brand-primary rounded-full mt-2 mr-4"></div>
-                <div>
-                  <p className="text-gray-700 leading-relaxed">
-                    <strong>Pattern Analysis:</strong> We analyze the relationships between different site measurements to identify potential hormonal patterns including insulin sensitivity, cortisol regulation, thyroid function, sex hormone balance, and growth hormone status.
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 w-2 h-2 bg-brand-primary rounded-full mt-2 mr-4"></div>
-                <div>
-                  <p className="text-gray-700 leading-relaxed">
-                    <strong>Targeted Interventions:</strong> Based on identified patterns, we develop specific recommendations for training modifications, nutritional adjustments, supplementation protocols, sleep optimization, and stress management techniques designed to address the underlying hormonal imbalances.
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 w-2 h-2 bg-brand-primary rounded-full mt-2 mr-4"></div>
-                <div>
-                  <p className="text-gray-700 leading-relaxed">
-                    <strong>Progress Tracking:</strong> We perform follow-up measurements every 4-6 weeks to track changes in fat distribution patterns, assess intervention effectiveness, and make protocol adjustments as needed.
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 w-2 h-2 bg-brand-primary rounded-full mt-2 mr-4"></div>
-                <div>
-                  <p className="text-gray-700 leading-relaxed">
-                    <strong>Integration with Lab Testing:</strong> For comprehensive hormonal assessment, we often recommend BioSignature in conjunction with blood work through our laboratory partners, providing both real-time body composition data and detailed endocrine panel results.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          {/* BioSignature FAQ */}
-          <div className="mb-8">
-            <h3 className="text-2xl font-bold text-brand-ink mb-6">Common Questions About BioSignature</h3>
-            <FAQ items={[
-              {
-                question: "Is BioSignature scientifically validated?",
-                answer: "BioSignature is based on observational research and clinical experience rather than controlled trials. It should be viewed as a coaching tool and indicator system rather than a diagnostic medical test. The patterns identified can guide lifestyle interventions, but should not replace medical consultation for hormonal concerns. Many coaches report strong correlations between BioSignature patterns and subsequent lab work, though individual variation exists."
-              },
-              {
-                question: "Who benefits most from BioSignature assessment?",
-                answer: "BioSignature is particularly valuable for individuals who have reached a plateau despite consistent training and nutrition compliance, those seeking to optimize hormonal health naturally, athletes looking for performance edges through metabolic optimization, or anyone interested in a deeper understanding of how their physiology responds to training and nutrition interventions. It's suitable for both beginners and advanced trainees."
-              },
-              {
-                question: "How does BioSignature differ from other body composition methods?",
-                answer: "Unlike DEXA, InBody, or simple body fat percentage measurements, BioSignature focuses on fat distribution patterns rather than total body fat percentage. This site-specific approach provides actionable information about potential metabolic and hormonal issues that total body composition numbers cannot reveal. A person with 15% body fat but poor distribution may face different optimization strategies than someone with the same percentage but better fat distribution."
-              },
-              {
-                question: "Do I need lab work in addition to BioSignature?",
-                answer: "While not required, comprehensive blood panels provide complementary information. BioSignature offers real-time feedback you can track every 4-6 weeks, while lab work provides precise hormonal values. We typically recommend an initial comprehensive blood panel through our laboratory partners to establish baseline values, then use BioSignature for ongoing tracking between blood draws. This combination provides both detailed biochemical data and frequent progress monitoring."
-              },
-              {
-                question: "How quickly can I expect to see changes in BioSignature measurements?",
-                answer: "Response varies based on the severity of imbalances and consistency with interventions. Some individuals see measurable improvements in stubborn fat sites within 4-6 weeks of targeted interventions. Significant pattern changes typically require 12-16 weeks of consistent protocol adherence. We generally recommend at least three measurement periods (baseline, 6 weeks, 12 weeks) before making major protocol modifications, as hormonal adaptations require time."
-              }
-            ]} />
-          </div>
-
-          {/* Disclaimer */}
-          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded mb-8">
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <svg
-                  className="h-6 w-6 text-yellow-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div className="ml-4">
-                <h4 className="text-sm font-bold text-yellow-800 mb-2">Important Disclaimer</h4>
-                <p className="text-sm text-yellow-700 leading-relaxed">
-                  BioSignature assessment and the information derived from it are for educational and coaching purposes only. This is not medical advice, diagnosis, or treatment. The patterns identified may suggest areas for lifestyle optimization but do not constitute medical evaluation of hormonal status. Always consult with qualified healthcare providers for medical concerns, before beginning new supplement protocols, or if you suspect hormonal imbalances. Pregnant or nursing women should not undergo BioSignature assessment or follow BioSignature-derived protocols without physician approval.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center">
+          <div className="text-center mt-8">
             <a href="/booking" className="btn-primary text-lg">
-              Schedule BioSignature Assessment
+              Schedule Body Fat Assessment
             </a>
           </div>
         </div>
@@ -298,6 +200,44 @@ export default async function HowWeWorkPage() {
               <h3 className="text-xl font-bold text-brand-ink mb-3">Nutritional Periodization</h3>
               <p className="text-gray-700 text-sm leading-relaxed">
                 Macronutrient distribution and caloric intake are adjusted based on training phase, body composition goals, and individual response. We manipulate carbohydrate timing and total intake strategically to support training intensity while managing body composition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Recovery and Restoration */}
+      <section className="section bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-ink mb-6 font-display text-center">
+            Recovery and Restoration
+          </h2>
+          <p className="text-lg text-gray-700 text-center mb-12 leading-relaxed">
+            Because progress doesn't just happen in the gym — it happens when you recover.
+          </p>
+
+          <div className="space-y-8">
+            {/* Infrared Saunas */}
+            <div className="bg-brand-paper rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-brand-ink mb-4">Infrared Saunas</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Unwind in our infrared saunas, located in the locker rooms, and experience deep, restorative heat that promotes muscle recovery, detoxification, and relaxation.
+              </p>
+            </div>
+
+            {/* Recovery Room */}
+            <div className="bg-brand-paper rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-brand-ink mb-4">Recovery Room</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Step into our dedicated Recovery Room, a calm space for breath work, yoga, meditation, and stretching — perfect for resetting your body, restoring focus, and finding stillness after intense training.
+              </p>
+            </div>
+
+            {/* Massage */}
+            <div className="bg-brand-paper rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-brand-ink mb-4">Massage Therapy</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Professional massage therapy services available to support your recovery, reduce muscle tension, and enhance overall well-being.
               </p>
             </div>
           </div>

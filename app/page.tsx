@@ -39,8 +39,8 @@ export default async function HomePage() {
               <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-[1.4] tracking-[-0.005em]">Personalized Plans</p>
             </div>
             <div className="group cursor-default">
-              <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-semibold text-brand-ink mb-2 tracking-[-0.012em] transition-colors duration-200 group-hover:text-black">BioSignature</h3>
-              <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-[1.4] tracking-[-0.005em]">Body Composition</p>
+              <h3 className="text-[17px] sm:text-[19px] md:text-[21px] font-semibold text-brand-ink mb-2 tracking-[-0.012em] transition-colors duration-200 group-hover:text-black">Body Fat Measurement</h3>
+              <p className="text-[13px] sm:text-[15px] text-[#86868b] font-normal leading-[1.4] tracking-[-0.005em]">14-Site Analysis</p>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default async function HomePage() {
           <div className="text-center">
             <h3 className="text-[21px] sm:text-[24px] font-semibold mb-3 tracking-[-0.01em] leading-tight">Assessment</h3>
             <p className="text-[15px] sm:text-[17px] text-[#86868b] leading-[1.5] tracking-[-0.005em]">
-              Comprehensive evaluation including BioSignature body composition analysis.
+              Comprehensive evaluation including body fat measurement and movement assessment.
             </p>
           </div>
           <div className="text-center">
@@ -79,20 +79,20 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* BioSignature Teaser */}
+      {/* Body Fat Measurement Section */}
       <section className="section bg-brand-paper">
         <div className="max-w-4xl mx-auto">
           <div className="inline-block bg-brand-primary text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
             Advanced Body Composition Analysis
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-ink mb-4 font-display">
-            BioSignature Modulation
+            Vigour's Body Fat Measurement
           </h2>
           <p className="text-lg text-gray-700 mb-6">
-            Discover how your body fat distribution patterns can reveal hormonal imbalances and metabolic dysfunction. BioSignature is a revolutionary method developed by renowned strength coach Charles Poliquin that uses 12-site body fat measurements to identify hormonal patterns and guide targeted interventions through nutrition, supplementation, and lifestyle optimization.
+            A method that measures subcutaneous body fat at 14 specific sites to identify potential hormonal imbalances and metabolic dysfunction. This data informs targeted interventions through training modifications, nutritional adjustments, supplementation protocols and lifestyle optimization strategies. We often recommend specific types of blood work through our laboratory partners, providing both real-time body composition data and detailed endocrine panel results.
           </p>
-          <a href="/how-we-work#biosignature" className="btn-secondary">
-            Learn More About BioSignature
+          <a href="/how-we-work#body-fat-measurement" className="btn-secondary">
+            Learn More
           </a>
         </div>
       </section>
@@ -111,7 +111,7 @@ export default async function HomePage() {
         <section className="section bg-white">
           <h2 className="section-title text-center">Meet Our Expert Coaches</h2>
           <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">
-            Our team of certified strength coaches, nutrition specialists, and BioSignature practitioners brings decades of combined experience helping clients achieve extraordinary results through science-based programming and individualized attention.
+            Our team of certified strength coaches, nutrition specialists, and body composition experts brings decades of combined experience helping clients achieve extraordinary results through science-based programming and individualized attention.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {trainers.slice(0, 3).map((trainer: any) => (
@@ -143,8 +143,8 @@ export default async function HomePage() {
                 <p className="text-sm text-gray-600">Expert programming for maximum strength gains</p>
               </div>
               <div className="bg-brand-paper p-6 rounded-lg">
-                <h3 className="font-bold mb-2 text-brand-primary text-lg">BioSignature Certified</h3>
-                <p className="text-sm text-gray-600">Advanced body composition analysis</p>
+                <h3 className="font-bold mb-2 text-brand-primary text-lg">Body Composition Experts</h3>
+                <p className="text-sm text-gray-600">14-site body fat measurement</p>
               </div>
               <div className="bg-brand-paper p-6 rounded-lg">
                 <h3 className="font-bold mb-2 text-brand-primary text-lg">Nutrition Experts</h3>
