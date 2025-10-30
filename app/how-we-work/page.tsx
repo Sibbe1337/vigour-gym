@@ -132,7 +132,7 @@ export default async function HowWeWorkPage() {
             Advanced Body Composition Analysis
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-ink mb-6 font-display">
-            Vigour's Body Fat Measurement
+            Hormonal Optimization
           </h2>
 
           <div className="prose prose-lg max-w-none mb-8">

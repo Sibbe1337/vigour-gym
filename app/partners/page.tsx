@@ -17,8 +17,26 @@ export default async function PartnersPage() {
         subtitle="Access comprehensive laboratory testing and functional medicine services through our carefully selected partner network"
       />
 
+      {/* Hotel & Club Partners */}
+      <section className="section bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="inline-block bg-brand-primary text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
+            Hotel & Club Partners
+          </div>
+          <h2 className="text-3xl font-bold text-brand-ink mb-6 font-display">Hotel & Club Partners</h2>
+          <div className="prose prose-lg max-w-none">
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              At Vigour, we serve as the dedicated personal trainers for Club Dahlia, working closely with their members to deliver an elevated coaching experience.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              We also provide discreet, high-level training and coaching for guests of Hotel Villa Dagmar, Hotel Villa Dahlia and Hotel Diplomat, available upon request during their stay.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Introduction */}
-      <section className="section">
+      <section className="section bg-brand-paper">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-ink mb-6 font-display">
             Strategic Partnerships for Enhanced Results

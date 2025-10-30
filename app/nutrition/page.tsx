@@ -114,47 +114,6 @@ export default async function NutritionPage() {
         </div>
       </section>
 
-      {/* Macronutrient Strategy */}
-      <section className="section bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-brand-ink mb-8 font-display">
-            Macronutrient Optimization and Nutrient Timing
-          </h2>
-
-          <div className="space-y-8">
-            <div className="border-l-4 border-brand-primary pl-6">
-              <h3 className="text-2xl font-bold text-brand-ink mb-3">Protein Requirements</h3>
-              <p className="text-gray-700 leading-relaxed mb-3">
-                Adequate protein intake is non-negotiable for anyone training for strength or body composition goals. Protein provides the amino acid building blocks necessary for muscle protein synthesis, recovery, and adaptation to training stress. We typically recommend 1.6-2.4 grams per kilogram of body weight for active individuals, with higher intakes during caloric restriction to preserve lean mass.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                Protein distribution throughout the day matters. We encourage multiple protein feedings (4-5 servings) to optimize muscle protein synthesis across the day. Each serving should contain 30-50 grams of high-quality protein with adequate leucine content to trigger the anabolic response. Post-training protein intake is important but not magical—total daily protein and distribution across meals matters more than precise post-workout timing.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-brand-primary pl-6">
-              <h3 className="text-2xl font-bold text-brand-ink mb-3">Carbohydrate Manipulation</h3>
-              <p className="text-gray-700 leading-relaxed mb-3">
-                Carbohydrate requirements vary dramatically based on training volume, intensity, metabolic type, and body composition goals. Higher carbohydrate intakes support high-intensity training performance, glycogen repletion, and muscle building phases. Lower carbohydrate approaches can be effective for fat loss, improving insulin sensitivity, or individuals who metabolically respond well to higher fat intakes.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                We use carbohydrate periodization—adjusting intake based on training demands. Heavy training days warrant higher carbohydrate to fuel performance and recovery, while rest days or lower intensity sessions may use reduced carbohydrate. Carbohydrate timing around training (before and after sessions) can optimize performance and recovery for most individuals.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-brand-primary pl-6">
-              <h3 className="text-2xl font-bold text-brand-ink mb-3">Dietary Fat Optimization</h3>
-              <p className="text-gray-700 leading-relaxed mb-3">
-                Dietary fat is essential for hormone production, cellular function, nutrient absorption, and satiety. Minimum fat intake should be approximately 0.8-1.0 grams per kilogram body weight to support hormonal health, with higher intakes for those following lower-carbohydrate approaches or who have metabolic preferences for fat as fuel.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                Fat quality matters significantly. We emphasize omega-3 fatty acids from fish, monounsaturated fats from olive oil and avocados, saturated fats from quality animal sources, and limit industrial seed oils and trans fats. The omega-6 to omega-3 ratio in modern diets is typically excessive, contributing to inflammation—we address this through food selection and targeted fish oil supplementation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Supplementation */}
       <section className="section bg-brand-paper">
         <div className="max-w-6xl mx-auto">
@@ -273,30 +232,6 @@ export default async function NutritionPage() {
             </div>
           </div>
 
-          {/* Disclaimer Box */}
-          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded">
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <svg
-                  className="h-6 w-6 text-yellow-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div className="ml-4">
-                <h4 className="text-sm font-bold text-yellow-800 mb-2">Important Supplement Disclaimer</h4>
-                <p className="text-sm text-yellow-700 leading-relaxed">
-                  This information is for educational purposes only and does not constitute medical advice. Supplements should not replace a balanced diet or medical treatment. Always consult with qualified healthcare providers before beginning any supplement protocol, especially if you have medical conditions, take medications, or are pregnant or nursing. Supplement quality varies significantly—we recommend third-party tested products from reputable manufacturers. Individual responses to supplementation vary and some recommendations may not be appropriate for all individuals.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
