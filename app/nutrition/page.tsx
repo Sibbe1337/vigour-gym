@@ -97,7 +97,7 @@ export default async function NutritionPage() {
                 Food is a powerful hormonal signaling mechanism. The macronutrient composition, meal timing, and food quality of your diet directly influence insulin sensitivity, cortisol patterns, thyroid function, sex hormone production, and growth hormone release. We design nutrition protocols that optimize these hormonal cascades for improved body composition, recovery, and performance.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                For clients with identified hormonal imbalances through BioSignature or laboratory testing, we implement targeted nutritional interventions to support hormonal optimization. This may include carbohydrate manipulation for insulin sensitivity, specific fat intake strategies for testosterone production, or targeted micronutrient supplementation for thyroid support.
+                For clients with identified hormonal imbalances through laboratory testing, we implement targeted nutritional interventions to support hormonal optimization. This may include carbohydrate manipulation for insulin sensitivity, specific fat intake strategies for testosterone production, or targeted micronutrient supplementation for thyroid support.
               </p>
             </div>
 
@@ -111,127 +111,6 @@ export default async function NutritionPage() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Supplementation */}
-      <section className="section bg-brand-paper">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-brand-ink mb-8 text-center font-display">
-            Evidence-Based Supplementation Protocols
-          </h2>
-
-          <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
-            Supplements cannot compensate for poor nutrition, but strategic supplementation can address micronutrient deficiencies, support optimal hormonal function, enhance training performance, and accelerate recovery when used appropriately. We recommend supplements based on individual needs, laboratory testing when available, and current scientific evidence.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {/* Foundational Supplements */}
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-bold text-brand-ink mb-4">Omega-3 Fatty Acids (EPA/DHA)</h3>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Purpose:</strong> Anti-inflammatory effects, cardiovascular health, brain function, insulin sensitivity, muscle protein synthesis signaling.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Dosing:</strong> 2-4 grams combined EPA/DHA daily from high-quality fish oil. Higher doses may be warranted for inflammatory conditions or during intense training phases.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                <strong>Timing:</strong> Can be split across meals or taken with largest meal for improved absorption. Quality matters significantly—choose molecularly distilled, third-party tested products.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-bold text-brand-ink mb-4">Vitamin D3</h3>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Purpose:</strong> Bone health, immune function, testosterone production, insulin sensitivity, muscle function, mood regulation.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Dosing:</strong> 2000-5000 IU daily for most individuals, adjusted based on blood levels (optimal range 50-80 ng/mL). Scandinavian residents are particularly prone to deficiency due to limited sun exposure.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                <strong>Timing:</strong> Take with fat-containing meal for improved absorption. Consider co-supplementation with vitamin K2 (MK-7) for optimal calcium metabolism.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-bold text-brand-ink mb-4">Magnesium</h3>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Purpose:</strong> Over 300 enzymatic reactions, sleep quality, muscle relaxation, stress response, glucose metabolism, protein synthesis.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Dosing:</strong> 400-600mg elemental magnesium from highly bioavailable forms (bisglycinate, threonate, or malate). Avoid magnesium oxide which has poor absorption.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                <strong>Timing:</strong> Evening dosing can support sleep quality. Magnesium bisglycinate is particularly effective for sleep and recovery enhancement.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-bold text-brand-ink mb-4">Zinc</h3>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Purpose:</strong> Testosterone production, immune function, protein synthesis, wound healing, thyroid function. Training increases zinc losses.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Dosing:</strong> 15-30mg elemental zinc daily from chelated forms (picolinate or bisglycinate). Higher doses (up to 50mg) may be used short-term for immune support.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                <strong>Timing:</strong> Away from calcium and iron for optimal absorption. Long-term supplementation should include copper (zinc:copper ratio of 10:1) to prevent imbalances.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-bold text-brand-ink mb-4">Creatine Monohydrate</h3>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Purpose:</strong> ATP regeneration, muscle strength and power, muscle mass, cognitive function, neuroprotection. Most researched performance supplement.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Dosing:</strong> 5 grams daily, consistently. Loading phases are optional (20g/day for 5 days) but not necessary for long-term saturation. Approximately 70-80% of individuals are "responders."
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                <strong>Timing:</strong> Timing is largely irrelevant due to saturation effect. Can be taken with carbohydrates post-workout for potentially improved uptake, but daily consistency matters most.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-bold text-brand-ink mb-4">Protein Powder</h3>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Purpose:</strong> Convenient protein source to meet daily targets, post-workout recovery, between-meal protein feedings. Not superior to whole food protein but highly practical.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Dosing:</strong> 25-50 grams per serving based on total daily protein needs. Whey protein (isolate or concentrate) is ideal for fast absorption. Plant-based options (pea, rice blend) for dairy-sensitive individuals.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                <strong>Timing:</strong> Post-workout is common but not critical. Can be used as convenient protein source at any meal or snack. Choose products with minimal additives and third-party testing (Informed Sport, NSF Certified for Sport).
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-bold text-brand-ink mb-4">Vitamin B-Complex</h3>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Purpose:</strong> Energy metabolism, neurotransmitter synthesis, stress response, red blood cell formation. B vitamins are water-soluble and not stored long-term.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Dosing:</strong> High-quality B-complex with methylated forms of B12 and folate (methylcobalamin and methylfolate) for optimal utilization. Look for products with all 8 B vitamins in balanced ratios.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                <strong>Timing:</strong> Morning with breakfast to support energy metabolism throughout the day. May cause neon yellow urine (harmless riboflavin excretion).
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-6">
-              <h3 className="text-xl font-bold text-brand-ink mb-4">Digestive Enzymes & Probiotics</h3>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Purpose:</strong> Improved nutrient digestion and absorption, gut health optimization, immune function, reduced bloating and digestive discomfort.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                <strong>Dosing:</strong> Broad-spectrum digestive enzyme with meals high in protein and fiber. Multi-strain probiotic (10-50 billion CFU) with clinically researched strains.
-              </p>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                <strong>Timing:</strong> Digestive enzymes with meals. Probiotics on empty stomach or with small meal. Quality and strain specificity matter significantly for probiotics.
-              </p>
-            </div>
-          </div>
-
         </div>
       </section>
 

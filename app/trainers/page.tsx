@@ -75,17 +75,6 @@ export default async function TrainersPage() {
             </div>
           ))}
         </div>
-
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-brand-ink mb-6 font-display">
-            Hotel & Club Partnerships
-          </h2>
-          <div className="bg-brand-paper rounded-xl p-8 mb-8">
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              We are the personal trainers for <strong>Club Dahlia</strong> and work closely with their members. Additionally, we provide personal training services for guests at <strong>Villa Dagmar</strong> and <strong>Hotel Diplomat</strong> when they need expert coaching during their stay.
-            </p>
-          </div>
-        </div>
       </section>
     </>
   )
