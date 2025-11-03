@@ -29,7 +29,7 @@ export default async function PartnersPage() {
               At Vigour, we serve as the dedicated personal trainers for Club Dahlia, working closely with their members to deliver an elevated coaching experience.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              We also provide discreet, high-level training and coaching for guests of Hotel Villa Dagmar, Hotel Villa Dahlia and Hotel Diplomat, available upon request during their stay.
+              We also provide discreet, high-level training and coaching for guests of <strong>Hotel Villa Dagmar</strong>, <strong>Hotel Villa Dahlia</strong> and <strong>Hotel Diplomat</strong>, available upon request during their stay.
             </p>
           </div>
         </div>
