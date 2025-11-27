@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from '@/components/Hero'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -19,11 +20,24 @@ export default async function PartnersPage() {
 
       {/* Hotel & Club Partners */}
       <section className="section bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="inline-block bg-brand-primary text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
             Hotel & Club Partners
           </div>
           <h2 className="text-3xl font-bold text-brand-ink mb-6 font-display">Hotel & Club Partners</h2>
+          
+          {/* Gym Image */}
+          <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-8 ring-1 ring-black/[0.04]">
+            <Image
+              src="/gallery/vigour-gym-interior.jpg"
+              alt="Vigour Gym interior at Club Dahlia"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1200px) 100vw, 1200px"
+              priority
+            />
+          </div>
+
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               At Vigour, we serve as the dedicated personal trainers for Club Dahlia, working closely with their members to deliver an elevated coaching experience.
