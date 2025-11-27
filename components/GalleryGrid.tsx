@@ -8,6 +8,7 @@ interface GalleryGridProps {
 
 export default function GalleryGrid({
   images = [
+    '/gallery/vigour-gym-interior.jpg',
     '/gallery/vigour-10.jpg',
     '/gallery/vigour-20.jpg',
     '/gallery/vigour-32.jpg',
