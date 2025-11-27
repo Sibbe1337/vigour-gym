@@ -1,4 +1,7 @@
 import { NextResponse } from 'next/server'
+import { Resend } from 'resend'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
   try {
@@ -15,22 +18,30 @@ export async function POST(request: Request) {
       timestamp: new Date().toISOString(),
     })
 
-    // TODO: Send email using Resend or another service
-    // if (process.env.RESEND_API_KEY) {
-    //   await resend.emails.send({
-    //     from: 'noreply@vigourgym.com',
-    //     to: process.env.CONTACT_EMAIL || 'info@vigourgym.com',
-    //     subject: `New Contact Form Submission from ${name}`,
-    //     html: `
-    //       <h2>New Contact Form Submission</h2>
-    //       <p><strong>Name:</strong> ${name}</p>
-    //       <p><strong>Email:</strong> ${email}</p>
-    //       <p><strong>Phone:</strong> ${phone || 'N/A'}</p>
-    //       <p><strong>Goal:</strong> ${goal}</p>
-    //       <p><strong>Message:</strong> ${message || 'N/A'}</p>
-    //     `,
-    //   })
-    // }
+    // Send email to Johan
+    if (process.env.RESEND_API_KEY) {
+      try {
+        await resend.emails.send({
+          from: 'Vigour Gym <noreply@vigourgym.se>',
+          to: 'johan@vigourfitness.se',
+          replyTo: email,
+          subject: `New Contact Form Submission from ${name}`,
+          html: `
+            <h2>New Contact Form Submission</h2>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phone || 'N/A'}</p>
+            <p><strong>Goal:</strong> ${goal}</p>
+            <p><strong>Additional Information:</strong> ${message || 'N/A'}</p>
+            <hr />
+            <p><small>Submitted: ${new Date().toLocaleString('sv-SE', { timeZone: 'Europe/Stockholm' })}</small></p>
+          `,
+        })
+      } catch (emailError) {
+        console.error('Failed to send email:', emailError)
+        // Continue even if email fails - still log the submission
+      }
+    }
 
     return NextResponse.json(
       { message: 'Contact form submitted successfully' },
