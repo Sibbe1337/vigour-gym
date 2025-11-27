@@ -25,9 +25,18 @@ export default async function PartnersPage() {
             Hotel & Club Partners
           </div>
           <h2 className="text-3xl font-bold text-brand-ink mb-6 font-display">Hotel & Club Partners</h2>
+
+          <div className="prose prose-lg max-w-none mb-8">
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              At Vigour, we serve as the dedicated personal trainers for Club Dahlia, working closely with their members to deliver an elevated coaching experience.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              We also provide discreet, high-level training and coaching for guests of <strong>Hotel Villa Dagmar</strong>, <strong>Hotel Villa Dahlia</strong> and <strong>Hotel Diplomat</strong>, available upon request during their stay.
+            </p>
+          </div>
           
           {/* Gym Image */}
-          <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-8 ring-1 ring-black/[0.04]">
+          <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden ring-1 ring-black/[0.04]">
             <Image
               src="/gallery/vigour-gym-interior.jpg"
               alt="Vigour Gym interior at Club Dahlia"
@@ -36,15 +45,6 @@ export default async function PartnersPage() {
               sizes="(max-width: 1200px) 100vw, 1200px"
               priority
             />
-          </div>
-
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              At Vigour, we serve as the dedicated personal trainers for Club Dahlia, working closely with their members to deliver an elevated coaching experience.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              We also provide discreet, high-level training and coaching for guests of <strong>Hotel Villa Dagmar</strong>, <strong>Hotel Villa Dahlia</strong> and <strong>Hotel Diplomat</strong>, available upon request during their stay.
-            </p>
           </div>
         </div>
       </section>
