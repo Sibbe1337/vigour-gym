@@ -46,6 +46,14 @@ export default function Footer({ settings }: FooterProps) {
             {settings?.address && <p className="text-gray-700 mb-3 text-sm sm:text-base font-semibold">{settings.address}</p>}
             {settings?.phone && <p className="text-gray-700 mb-3 text-sm sm:text-base font-semibold">Tel: {settings.phone}</p>}
             {settings?.email && <p className="text-gray-700 mb-6 text-sm sm:text-base font-semibold">Email: {settings.email}</p>}
+            
+            <Link 
+              href="/booking" 
+              className="inline-block bg-brand-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-brand-primary/90 transition-all mb-6"
+            >
+              Book Now
+            </Link>
+
             {settings?.socials && settings.socials.length > 0 && (
               <div className="flex gap-4 sm:gap-6 mt-4 sm:mt-6">
                 {settings.socials.map((social, index) => (
