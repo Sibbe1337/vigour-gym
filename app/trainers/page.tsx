@@ -65,7 +65,7 @@ export default async function TrainersPage() {
                   src={coach.photoUrl}
                   alt={coach.name}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  className="object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-500 ease-out"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
