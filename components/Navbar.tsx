@@ -18,37 +18,37 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="bg-white/70 backdrop-blur-[20px] border-b border-black/[0.06] sticky top-0 z-50 safe-area-inset-top transition-all duration-300" style={{ boxShadow: '0 1px 0 0 rgba(0, 0, 0, 0.03)' }}>
+    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50 safe-area-inset-top transition-all duration-300">
       <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-8 lg:px-12">
-        <div className="flex justify-between items-center h-[52px]">
-          <Link href="/" className="flex items-center -ml-2 transition-opacity duration-200 hover:opacity-70">
+        <div className="flex justify-between items-center h-20">
+          <Link href="/" className="flex items-center transition-opacity duration-200 hover:opacity-80">
             <Image
               src="/vigour-logo.avif"
               alt="Vigour Gym"
-              width={240}
-              height={85}
+              width={280}
+              height={100}
               priority
-              className="h-[44px] w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex space-x-9 items-center">
+          <ul className="hidden lg:flex space-x-8 items-center">
             {links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-black/90 hover:text-black transition-all duration-200 text-[12px] font-normal tracking-[0.01em] relative group"
+                  className="text-gray-800 hover:text-black transition-all duration-200 text-sm font-semibold tracking-wide relative group"
                 >
                   {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
             ))}
           </ul>
 
-          <a href="/booking" className="hidden lg:block bg-black text-white rounded-full px-[18px] py-[7px] text-[12px] font-normal hover:bg-black/90 active:scale-[0.96] touch-manipulation" style={{ transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)', boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)' }}>
-            Book
+          <a href="/booking" className="hidden lg:block bg-brand-primary text-white rounded-lg px-6 py-2.5 text-sm font-bold hover:bg-brand-primary/90 transition-all shadow-sm">
+            Book Now
           </a>
 
           {/* Mobile Menu Button */}
