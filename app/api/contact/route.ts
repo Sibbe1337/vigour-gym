@@ -21,7 +21,7 @@ export async function POST(request: Request) {
       try {
         const resend = new Resend(process.env.RESEND_API_KEY)
         await resend.emails.send({
-          from: 'Vigour Gym <noreply@vigourgym.se>',
+          from: 'Vigour Gym <onboarding@resend.dev>',
           to: 'johan@vigourfitness.se',
           replyTo: email,
           subject: `New Contact Form Submission from ${name}`,
